@@ -1,14 +1,14 @@
 # Inherit common CM stuff
-$(call inherit-product, vendor/cyanogen/products/common.mk)
+$(call inherit-product, vendor/greenromproducts/products/common.mk)
 
 # Bring in all audio files
 include frameworks/base/data/sounds/AllAudio.mk
 
 # Theme packages
-include vendor/cyanogen/products/themes.mk
+include vendor/greenromproducts/products/themes.mk
 
 # Include extra dictionaries for LatinIME
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/greenromproducts/overlay/dictionaries
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
