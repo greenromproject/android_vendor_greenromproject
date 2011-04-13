@@ -73,6 +73,7 @@ PRODUCT_COPY_FILES += \
     vendor/greenromproject/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd \
     vendor/greenromproject/prebuilt/common/etc/init.d/06mountdl:system/etc/init.d/06mountdl \
     vendor/greenromproject/prebuilt/common/etc/init.d/20userinit:system/etc/init.d/20userinit \
+    vendor/greenromproject/prebuilt/common/etc/init.d/99sdcard3072kb:system/etc/init.d/99sdcard3072kb \
     vendor/greenromproject/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache \
     vendor/greenromproject/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/greenromproject/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions \
@@ -80,13 +81,14 @@ PRODUCT_COPY_FILES += \
     vendor/greenromproject/prebuilt/common/xbin/htop:system/xbin/htop \
     vendor/greenromproject/prebuilt/common/xbin/irssi:system/xbin/irssi \
     vendor/greenromproject/prebuilt/common/xbin/powertop:system/xbin/powertop \
-    vendor/greenromproject/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
+    vendor/greenromproject/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh 
 
 PRODUCT_COPY_FILES += \
-#    vendor/greenromproject/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
+    vendor/greenromproject/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd \
 
 PRODUCT_COPY_FILES +=  \
     vendor/greenromproject/proprietary/RomManager.apk:system/app/RomManager.apk \
+    vendor/greenromproject/proprietary/com.google.music.apk:system/app/com.google.music.apk
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
