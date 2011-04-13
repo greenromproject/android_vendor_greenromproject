@@ -138,9 +138,9 @@ find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-str
 
 # Determine what to name the new signed package
 if [ -z "$CYANOGEN_NIGHTLY" ]; then
-	MODVERSION=`sed -n -e'/ro\.modversion/s/^.*CyanogenMod-//p' $REPACK/ota/system/build.prop`
+	MODVERSION=`sed -n -e'/ro\.modversion/s/^.*GreenRomProject-//p' $REPACK/ota/system/build.prop`
 	: ${MODVERSION:=nightly}
-	OUTFILE=$OUT/update-cm-$MODVERSION-signed.zip
+	OUTFILE=$OUT/update-GRP-$MODVERSION-signed.zip
 else
 	OUTFILE=$OUT/update-squished.zip
 fi
