@@ -88,7 +88,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES +=  \
     vendor/greenromproject/proprietary/RomManager.apk:system/app/RomManager.apk \
-    vendor/greenromproject/proprietary/com.google.music.apk:system/app/com.google.music.apk
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
