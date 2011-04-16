@@ -1,12 +1,12 @@
 $(call inherit-product, device/htc/inc/inc.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cyanogen/products/common_full.mk)
+$(call inherit-product, vendor/greenromproject/products/common_full.mk)
 
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := cyanogen_inc
+PRODUCT_NAME := greenromproject_inc
 PRODUCT_BRAND := htc
 PRODUCT_DEVICE := inc
 PRODUCT_MODEL := Incredible
@@ -16,24 +16,27 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRI40 PRODUCT_NA
 PRODUCT_PROPERTY_OVERRIDES += ro.product.version=3.26.605.1
 
 # Extra Passion overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/inc
+PRODUCT_PACKAGE_OVERLAYS += vendor/greenromproject/overlay/inc
 
 # Add the Torch app
 PRODUCT_PACKAGES += Torch
 
 # Broadcom FM radio
-$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
+$(call inherit-product, vendor/greenromproject/products/bcm_fm_radio.mk)
 
 #
 # Set ro.modversion
 #
+#hijack routine
+GRP_RELEASE := GoVols
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Inc
 else
-    ifdef CYANOGEN_RELEASE
+#hijack
+    ifdef GRP_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC4-Inc
+            ro.modversion=GreenRomProject-presents-CyanogenMod-7.0.0-RC4-Inc-GRP
     else
         PRODUCT_PROPERTY_OVERRIDES += \
             ro.modversion=CyanogenMod-7.0.0-RC4-Inc-KANG
@@ -44,4 +47,4 @@ endif
 # Copy passion specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \
-    vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/greenromproject/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
