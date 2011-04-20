@@ -46,5 +46,7 @@ endif
 #
 # Copy passion specific prebuilt files
 #
-PRODUCT_COPY_FILES +=  \
-    vendor/greenromproject/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
+
+#disabled to use our version of bootanimation
+#PRODUCT_COPY_FILES +=  \
+#    vendor/greenromproject/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
