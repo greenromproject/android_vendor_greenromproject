@@ -38,5 +38,5 @@ endif
 #
 # Copy passion specific prebuilt files
 #
-PRODUCT_COPY_FILES +=  \
-    vendor/greenromproject/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
+#PRODUCT_COPY_FILES +=  \
+#    vendor/greenromproject/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
