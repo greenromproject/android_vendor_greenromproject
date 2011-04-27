@@ -56,6 +56,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/greenromproject/overlay/common
 # T-Mobile theme engine
 include vendor/greenromproject/products/themes_common.mk
 
+# GreenRomProject included apps
+PRODUCT_COPY_FILES += \
+    vendor/greenromproject/grpapps/Launcher2.apk:system/app/Launcher2.apk
+
 PRODUCT_COPY_FILES += \
     vendor/greenromproject/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/greenromproject/prebuilt/common/bin/modelid_cfg.sh:system/bin/modelid_cfg.sh \
@@ -136,7 +140,9 @@ ifdef CYANOGEN_WITH_GOOGLE
         vendor/greenromproject/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
         vendor/greenromproject/proprietary/features.xml:./system/etc/permissions/features.xml \
         vendor/greenromproject/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
-        vendor/greenromproject/proprietary/libspeech.so:./system/lib/libspeech.so
+        vendor/greenromproject/proprietary/libspeech.so:./system/lib/libspeech.so \	
+	vendor/greenromproject/grpapps/Launcher2.apk:./system/app/Launcher2.apk
+
 else
     PRODUCT_PACKAGES += \
         Provision \
