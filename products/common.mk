@@ -78,6 +78,7 @@ PRODUCT_COPY_FILES += \
     vendor/greenromproject/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/greenromproject/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions \
     vendor/greenromproject/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/greenromproject/prebuilt/common/lib/libjumper.so:system/lib/libjumper.so \
     vendor/greenromproject/prebuilt/common/xbin/htop:system/xbin/htop \
     vendor/greenromproject/prebuilt/common/xbin/irssi:system/xbin/irssi \
     vendor/greenromproject/prebuilt/common/xbin/powertop:system/xbin/powertop \
@@ -117,6 +118,7 @@ ifdef CYANOGEN_WITH_GOOGLE
         vendor/greenromproject/proprietary/Maps.apk:./system/app/Maps.apk \
         vendor/greenromproject/proprietary/MarketUpdater.apk:./system/app/MarketUpdater.apk \
         vendor/greenromproject/proprietary/MediaUploader.apk:./system/app/MediaUploader.apk \
+	vendor/greenromproject/proprietary/Music.apk:./system/app/Music.apk \
         vendor/greenromproject/proprietary/NetworkLocation.apk:./system/app/NetworkLocation.apk \
         vendor/greenromproject/proprietary/OneTimeInitializer.apk:./system/app/OneTimeInitializer.apk \
         vendor/greenromproject/proprietary/PassionQuickOffice.apk:./system/app/PassionQuickOffice.apk \
