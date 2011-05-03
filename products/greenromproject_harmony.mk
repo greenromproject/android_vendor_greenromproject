@@ -28,10 +28,10 @@ else
 #hijack
     ifdef GRP_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GreenRomProject-presents-CyanogenMod-7.0.0-RC4-Harmony_GRP
+            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-Harmony_GRP
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GreenRomProject-presents-CyanogenMod-7.0.0-RC4-Harmony_GRP
+            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-Harmony_GRP
     endif
 endif
 

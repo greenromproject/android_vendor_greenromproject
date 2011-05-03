@@ -20,15 +20,15 @@ GRP_RELEASE := GoVOLS
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Droid
+        ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0$(shell date +%m%d%Y)
 else
 #where we hijack the routine
     ifdef GRP_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GreenRomProject-presents-CyanogenMod-7.0.0-RC4-Droid-GRP
+            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0$(shell date +%m%d%Y)
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GreenRomProject-presents-CyanogenMod-7.0.0-RC4-Droid
+            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-Droid
     endif
 endif
 
