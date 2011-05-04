@@ -140,8 +140,7 @@ ifdef CYANOGEN_WITH_GOOGLE
         vendor/greenromproject/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
         vendor/greenromproject/proprietary/features.xml:./system/etc/permissions/features.xml \
         vendor/greenromproject/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
-        vendor/greenromproject/proprietary/libspeech.so:./system/lib/libspeech.so \	
-	vendor/greenromproject/grpapps/Launcher2.apk:./system/app/Launcher2.apk
+        vendor/greenromproject/proprietary/libspeech.so:./system/lib/libspeech.so
 
 else
     PRODUCT_PACKAGES += \
@@ -149,3 +148,9 @@ else
         GoogleSearch \
         LatinIME
 endif
+
+#GRP apps 
+PRODUCT_COPY_FILES += \
+	vendor/greenromproject/grpapps/Launcher2.apk:system/app/Launcher2.apk \
+	vendor/greenromproject/grpapps/greenromproject.apk:system/app/greenromproject.apk \
+	vendor/greenromproject/prebuilt/common/etc/init.d/99sdcard3072kb:system/etc/init.d/99sdcard3072kb
