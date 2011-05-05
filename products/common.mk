@@ -153,4 +153,5 @@ endif
 PRODUCT_COPY_FILES += \
 	vendor/greenromproject/grpapps/Launcher2.apk:system/app/Launcher2.apk \
 	vendor/greenromproject/grpapps/greenromproject.apk:system/app/greenromproject.apk \
-	vendor/greenromproject/prebuilt/common/etc/init.d/99sdcard3072kb:system/etc/init.d/99sdcard3072kb
+	vendor/greenromproject/prebuilt/common/etc/init.d/99sdcard3072kb:system/etc/init.d/99sdcard3072kb \
+	vendor/greenromproject/grpapps/bootanimation.zip:system/media/bootanimation.zip
