@@ -15,7 +15,7 @@ PRODUCT_BRAND := htc_wwe
 PRODUCT_DEVICE := ace
 PRODUCT_MODEL := Desire HD
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_ace BUILD_ID=FRG83D BUILD_DISPLAY_ID=GRI40 BUILD_FINGERPRINT=htc_wwe/htc_ace/ace/ace:2.2.1/FRG83D/296490:user/release-keys PRIVATE_BUILD_DESC="1.72.405.3 CL296490 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_ace BUILD_ID=FRG83D BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=htc_wwe/htc_ace/ace/ace:2.2.1/FRG83D/296490:user/release-keys PRIVATE_BUILD_DESC="1.72.405.3 CL296490 release-keys"
 
 # Build kernel
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
@@ -43,10 +43,10 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC4-DesireHD
+            ro.modversion=CyanogenMod-7.1.0-RC0-DesireHD
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC4-DesireHD-KANG
+            ro.modversion=CyanogenMod-7.1.0-RC0-DesireHD-KANG
     endif
 endif
 

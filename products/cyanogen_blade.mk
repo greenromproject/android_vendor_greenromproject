@@ -15,7 +15,7 @@ PRODUCT_BRAND := zte
 PRODUCT_DEVICE := blade
 PRODUCT_MODEL := Blade
 PRODUCT_MANUFACTURER := ZTE
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=cyanogen_blade BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRI40 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=cyanogen_blade BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
 
 #
 # Set ro.modversion
@@ -26,10 +26,10 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC4-Blade
+            ro.modversion=CyanogenMod-7.1.0-RC0-Blade
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC4-Blade-KANG
+            ro.modversion=CyanogenMod-7.1.0-RC0-Blade-KANG
     endif
 endif
 

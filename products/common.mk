@@ -81,7 +81,6 @@ PRODUCT_COPY_FILES += \
     vendor/greenromproject/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/greenromproject/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions \
     vendor/greenromproject/prebuilt/common/bin/sysinit:system/bin/sysinit \
-    vendor/greenromproject/prebuilt/common/lib/libjumper.so:system/lib/libjumper.so \
     vendor/greenromproject/prebuilt/common/xbin/htop:system/xbin/htop \
     vendor/greenromproject/prebuilt/common/xbin/irssi:system/xbin/irssi \
     vendor/greenromproject/prebuilt/common/xbin/powertop:system/xbin/powertop \

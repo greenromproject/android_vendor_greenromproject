@@ -12,9 +12,11 @@ PRODUCT_BRAND := bn
 PRODUCT_DEVICE := encore
 PRODUCT_MODEL := NookColor
 PRODUCT_MANUFACTURER := bn
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=encore BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRI40 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=encore BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/encore
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/cyanogen/overlay/tablet \
+    vendor/cyanogen/overlay/encore
 
 #
 # Set ro.modversion
@@ -25,14 +27,14 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC4-encore
+            ro.modversion=CyanogenMod-7.1.0-RC0-encore
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC4-encore-KANG
+            ro.modversion=CyanogenMod-7.1.0-RC0-encore-KANG
     endif
 endif
 
 
 PRODUCT_COPY_FILES +=  \
-    vendor/cyanogen/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
 
