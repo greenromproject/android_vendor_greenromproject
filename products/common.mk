@@ -77,7 +77,6 @@ PRODUCT_COPY_FILES += \
     vendor/greenromproject/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd \
     vendor/greenromproject/prebuilt/common/etc/init.d/06mountdl:system/etc/init.d/06mountdl \
     vendor/greenromproject/prebuilt/common/etc/init.d/20userinit:system/etc/init.d/20userinit \
-    vendor/greenromproject/prebuilt/common/etc/init.d/99sdcard3072kb:system/etc/init.d/99sdcard3072kb \
     vendor/greenromproject/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache \
     vendor/greenromproject/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/greenromproject/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions \
