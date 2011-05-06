@@ -25,7 +25,7 @@ else
 #where we hijack the routine
     ifdef GRP_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0$(shell date +%m%d%Y)
+            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-$(shell date +%m%d%Y)
     else
         PRODUCT_PROPERTY_OVERRIDES += \
             ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-Droid

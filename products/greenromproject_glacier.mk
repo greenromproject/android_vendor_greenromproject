@@ -43,9 +43,9 @@ ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-glacier
 else
-    ifdef CYANOGEN_RELEASE
+    ifdef GRP_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-glacier-GRP
+            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-$(shell date +%m%d%Y)-glacier-GRP
     else
         PRODUCT_PROPERTY_OVERRIDES += \
             ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-glacier-KANG
