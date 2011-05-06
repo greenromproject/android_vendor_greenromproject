@@ -50,9 +50,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/greenromproject/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
 
-# Common CM overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/greenromproject/overlay/common
-
 # T-Mobile theme engine
 include vendor/greenromproject/products/themes_common.mk
 
@@ -146,6 +143,10 @@ else
         GoogleSearch \
         LatinIME
 endif
+
+
+# Common overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/greenromproject/overlay/common
 
 #GRP apps 
 PRODUCT_COPY_FILES += \
