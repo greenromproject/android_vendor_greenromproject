@@ -90,53 +90,7 @@ include vendor/greenromproject/products/greenromproject.mk
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-# Always run in insecure mode, enables root on user build variants
-#ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
-
-ifdef CYANOGEN_WITH_GOOGLE
-    PRODUCT_COPY_FILES += \
-        vendor/greenromproject/proprietary/CarHomeGoogle.apk:./system/app/CarHomeGoogle.apk \
-        vendor/greenromproject/proprietary/CarHomeLauncher.apk:./system/app/CarHomeLauncher.apk \
-        vendor/greenromproject/proprietary/Facebook.apk:./system/app/Facebook.apk \
-        vendor/greenromproject/proprietary/GenieWidget.apk:./system/app/GenieWidget.apk \
-        vendor/greenromproject/proprietary/Gmail.apk:./system/app/Gmail.apk \
-        vendor/greenromproject/proprietary/GoogleBackupTransport.apk:./system/app/GoogleBackupTransport.apk \
-        vendor/greenromproject/proprietary/GoogleCalendarSyncAdapter.apk:./system/app/GoogleCalendarSyncAdapter.apk \
-        vendor/greenromproject/proprietary/GoogleContactsSyncAdapter.apk:./system/app/GoogleContactsSyncAdapter.apk \
-        vendor/greenromproject/proprietary/GoogleFeedback.apk:./system/app/GoogleFeedback.apk \
-        vendor/greenromproject/proprietary/GooglePartnerSetup.apk:./system/app/GooglePartnerSetup.apk \
-        vendor/greenromproject/proprietary/GoogleQuickSearchBox.apk:./system/app/GoogleQuickSearchBox.apk \
-        vendor/greenromproject/proprietary/GoogleServicesFramework.apk:./system/app/GoogleServicesFramework.apk \
-        vendor/greenromproject/proprietary/HtcCopyright.apk:./system/app/HtcCopyright.apk \
-        vendor/greenromproject/proprietary/HtcEmailPolicy.apk:./system/app/HtcEmailPolicy.apk \
-        vendor/greenromproject/proprietary/HtcSettings.apk:./system/app/HtcSettings.apk \
-        vendor/greenromproject/proprietary/LatinImeTutorial.apk:./system/app/LatinImeTutorial.apk \
-        vendor/greenromproject/proprietary/Maps.apk:./system/app/Maps.apk \
-        vendor/greenromproject/proprietary/MarketUpdater.apk:./system/app/MarketUpdater.apk \
-        vendor/greenromproject/proprietary/MediaUploader.apk:./system/app/MediaUploader.apk \
-	vendor/greenromproject/proprietary/Music.apk:./system/app/Music.apk \
-        vendor/greenromproject/proprietary/NetworkLocation.apk:./system/app/NetworkLocation.apk \
-        vendor/greenromproject/proprietary/OneTimeInitializer.apk:./system/app/OneTimeInitializer.apk \
-        vendor/greenromproject/proprietary/PassionQuickOffice.apk:./system/app/PassionQuickOffice.apk \
-        vendor/greenromproject/proprietary/SetupWizard.apk:./system/app/SetupWizard.apk \
-        vendor/greenromproject/proprietary/Street.apk:./system/app/Street.apk \
-        vendor/greenromproject/proprietary/Talk.apk:./system/app/Talk.apk \
-        vendor/greenromproject/proprietary/Twitter.apk:./system/app/Twitter.apk \
-        vendor/greenromproject/proprietary/Vending.apk:./system/app/Vending.apk \
-        vendor/greenromproject/proprietary/VoiceSearch.apk:./system/app/VoiceSearch.apk \
-        vendor/greenromproject/proprietary/YouTube.apk:./system/app/YouTube.apk \
-        vendor/greenromproject/proprietary/googlevoice.apk:./system/app/googlevoice.apk \
-        vendor/greenromproject/proprietary/kickback.apk:./system/app/kickback.apk \
-        vendor/greenromproject/proprietary/soundback.apk:./system/app/soundback.apk \
-        vendor/greenromproject/proprietary/talkback.apk:./system/app/talkback.apk \
-        vendor/greenromproject/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
-        vendor/greenromproject/proprietary/features.xml:./system/etc/permissions/features.xml \
-        vendor/greenromproject/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
-        vendor/greenromproject/proprietary/libspeech.so:./system/lib/libspeech.so
-
-else
-    PRODUCT_PACKAGES += \
-        Provision \
-        GoogleSearch \
-        LatinIME
-endif
+PRODUCT_PACKAGES += \
+	Provision \
+	GoogleSearch \
+	LatinIME
