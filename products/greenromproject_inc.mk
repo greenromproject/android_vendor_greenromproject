@@ -23,30 +23,3 @@ PRODUCT_PACKAGES += Torch
 
 # Broadcom FM radio
 $(call inherit-product, vendor/greenromproject/products/bcm_fm_radio.mk)
-
-#
-# Set ro.modversion
-#
-#hijack routine
-GRP_RELEASE := GoVols
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Inc
-else
-#hijack
-    ifdef GRP_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-$(shell date +%m%d%Y)-Inc-GRP
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-Inc-KANG
-    endif
-endif
-
-#
-# Copy passion specific prebuilt files
-#
-
-#disabled to use our version of bootanimation
-#PRODUCT_COPY_FILES +=  \
-#    vendor/greenromproject/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip

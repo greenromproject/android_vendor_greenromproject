@@ -15,27 +15,7 @@ PRODUCT_MANUFACTURER := Motorola
 #defined to hijack set ro.modversion routine below
 GRP_RELEASE := GoVOLS
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0$(shell date +%m%d%Y)
-else
-#where we hijack the routine
-    ifdef GRP_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-$(shell date +%m%d%Y)
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-Droid
-    endif
-endif
-
 PRODUCT_BUILD_PROP_OVERRIDES := BUILD_ID=FRG83D BUILD_DISPLAY_ID=GRJ22 PRODUCT_NAME=voles TARGET_DEVICE=sholes BUILD_FINGERPRINT=verizon/voles/sholes/sholes:2.2.1/FRG83D/75603:user/release-keys PRODUCT_BRAND=verizon PRIVATE_BUILD_DESC="voles-user 2.2.1 FRG83D 75603 release-keys" BUILD_NUMBER=75603 BUILD_UTC_DATE=1289367602 TARGET_BUILD_TYPE=user BUILD_VERSION_TAGS=release-keys USER=android-build
-
-#PRODUCT_COPY_FILES +=  \
-#    vendor/greenromproduct/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/greenromproject/overlay/sholes
 

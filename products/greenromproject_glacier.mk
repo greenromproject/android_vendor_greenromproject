@@ -33,27 +33,3 @@ PRODUCT_PACKAGES += GanOptimizer
 
 # Broadcom FM radio
 $(call inherit-product, vendor/greenromproject/products/bcm_fm_radio.mk)
-
-#
-# Set ro.modversion
-#
-#lets hijack this routine
-GRP_RELEASE := GoVOLS
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-glacier
-else
-    ifdef GRP_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-$(shell date +%m%d%Y)-glacier-GRP
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-glacier-KANG
-    endif
-endif
-
-#
-# Copy passion specific prebuilt files
-#
-#PRODUCT_COPY_FILES +=  \
-#    vendor/greenromproject/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
