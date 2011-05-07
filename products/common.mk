@@ -46,6 +46,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     openvpn
 
+# Common overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+	vendor/greenromproject/overlay/common \
+	vendor/greenromproject/overlay/greenromproject
+
+#GRP apps 
+PRODUCT_COPY_FILES += \
+	vendor/greenromproject/grpapps/Launcher2.apk:system/app/Launcher2.apk \
+	vendor/greenromproject/grpapps/greenromproject.apk:system/app/greenromproject.apk \
+	vendor/greenromproject/grpapps/99sdcard3072kb:system/etc/init.d/99sdcard3072kb
+	#vendor/greenromproject/grpapps/bootanimation.zip:system/media/bootanimation.zip
+
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
     vendor/greenromproject/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
@@ -143,14 +155,3 @@ else
         GoogleSearch \
         LatinIME
 endif
-
-
-# Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/greenromproject/overlay/common
-
-#GRP apps 
-PRODUCT_COPY_FILES += \
-	vendor/greenromproject/grpapps/Launcher2.apk:system/app/Launcher2.apk \
-	vendor/greenromproject/grpapps/greenromproject.apk:system/app/greenromproject.apk \
-	vendor/greenromproject/grpapps/99sdcard3072kb:system/etc/init.d/99sdcard3072kb
-	#vendor/greenromproject/grpapps/bootanimation.zip:system/media/bootanimation.zip
