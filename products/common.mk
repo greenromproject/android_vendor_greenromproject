@@ -5,14 +5,6 @@ PRODUCT_DEVICE := generic
 
 PRODUCT_PACKAGES += ADWLauncher
 
-ifdef CYANOGEN_NIGHTLY
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=cyanogenmodnightly
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=greenromproject
-endif
-
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # Used by BusyBox
@@ -20,6 +12,9 @@ KERNEL_MODULES_DIR:=/system/lib/modules
 
 # Tiny toolbox
 TINY_TOOLBOX:=true
+
+# This invokes GreenRomProject's overlay
+include vendor/greenromproject/products/greenromproject.mk
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -45,10 +40,6 @@ PRODUCT_PACKAGES += \
 # Extra tools in CyanogenMod
 PRODUCT_PACKAGES += \
     openvpn
-
-# Copy over the changelog to the device
-PRODUCT_COPY_FILES += \
-    vendor/greenromproject/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
 
 # T-Mobile theme engine
 include vendor/greenromproject/products/themes_common.mk
@@ -82,9 +73,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES +=  \
     vendor/greenromproject/proprietary/RomManager.apk:system/app/RomManager.apk \
-
-# This invokes GreenRomProject's overlay
-include vendor/greenromproject/products/greenromproject.mk
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \

@@ -1,22 +1,25 @@
-# Common overlay
+# GreenRomProject property overrides
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.rommanager.developerid=GreenRomProject \
+	ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-$(shell date +%m%d%Y)
+
+# Apply GreenRomProject themed overlay and common overlay to all devices
 PRODUCT_PACKAGE_OVERLAYS += \
-	vendor/greenromproject/overlay/common \
-	vendor/greenromproject/overlay/greenromproject
+	vendor/greenromproject/overlay/greenromproject \
+	vendor/greenromproject/overlay/common
 
 #GreenRomProject apps 
 PRODUCT_COPY_FILES += \
 	vendor/greenromproject/grpapps/Launcher2.apk:system/app/Launcher2.apk \
 	vendor/greenromproject/grpapps/greenromproject.apk:system/app/greenromproject.apk \
-	vendor/greenromproject/grpapps/99sdcard3072kb:system/etc/init.d/99sdcard3072kb
-	#vendor/greenromproject/grpapps/bootanimation.zip:system/media/bootanimation.zip
+	vendor/greenromproject/grpapps/99sdcard3072kb:system/etc/init.d/99sdcard3072kb \
+	vendor/greenromproject/grpapps/bootanimation.zip:system/media/bootanimation.zip
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-$(shell date +%m%d%Y)
-
+# Honeycomb music player
 PRODUCT_COPY_FILES += \
 	vendor/greenromproject/grpapps/com.google.android.music-1.apk:system/app/com.google.android.music-1.apk
 
-# Google apps
+# MISC included apps
 PRODUCT_COPY_FILES += \
         vendor/greenromproject/proprietary/CarHomeLauncher.apk:./system/app/CarHomeLauncher.apk \
         vendor/greenromproject/proprietary/Facebook.apk:./system/app/Facebook.apk \
