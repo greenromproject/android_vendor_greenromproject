@@ -1,7 +1,7 @@
 # Inherit AOSP device configuration for dream_sapphire.
 $(call inherit-product, device/htc/dream_sapphire/full_dream_sapphire.mk)
 
-# Inherit some common cyanogenmod stuff.
+# Inherit some common stuff.
 $(call inherit-product, vendor/greenromproject/products/common.mk)
 
 # Include GSM-only stuff
@@ -33,21 +33,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.compcache.default=18
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-DS
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC0-RC0-DS
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC0-RC0-DS-KANG
-    endif
-endif
 
 # Use the audio profile hack
 WITH_DS_HTCACOUSTIC_HACK := true
@@ -56,6 +41,5 @@ WITH_DS_HTCACOUSTIC_HACK := true
 # Copy DS specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \
-    vendor/greenromproject/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip \
     vendor/greenromproject/prebuilt/dream_sapphire/etc/AudioPara_dream.csv:system/etc/AudioPara_dream.csv \
     vendor/greenromproject/prebuilt/dream_sapphire/etc/AudioPara_sapphire.csv:system/etc/AudioPara_sapphire.csv

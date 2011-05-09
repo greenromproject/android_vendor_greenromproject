@@ -1,7 +1,7 @@
 # Inherit AOSP device configuration for leo.
 $(call inherit-product, device/htc/leo/full_leo.mk)
 
-# Inherit some common cyanogenmod stuff.
+# Inherit some common stuff.
 $(call inherit-product, vendor/greenromproject/products/common_full.mk)
 
 # Include GSM stuff
@@ -39,27 +39,3 @@ PRODUCT_PACKAGES += Torch
 
 # Broadcom FM radio
 $(call inherit-product, vendor/greenromproject/products/bcm_fm_radio.mk)
-
-
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-LEO
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC0-LEO
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC0-LEO-KANG
-    endif
-endif
-
-
-#
-# Copy leo specific prebuilt files
-#
-PRODUCT_COPY_FILES +=  \
-    vendor/greenromproject/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
