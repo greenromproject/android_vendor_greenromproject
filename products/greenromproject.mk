@@ -8,16 +8,19 @@ PRODUCT_PACKAGE_OVERLAYS += \
 	vendor/greenromproject/overlay/greenromproject \
 	vendor/greenromproject/overlay/common
 
-#GreenRomProject apps 
+# GreenRomProject apps 
 PRODUCT_COPY_FILES += \
 	vendor/greenromproject/grpapps/Launcher2.apk:system/app/Launcher2.apk \
 	vendor/greenromproject/grpapps/greenromproject.apk:system/app/greenromproject.apk \
-	vendor/greenromproject/grpapps/99sdcard3072kb:system/etc/init.d/99sdcard3072kb \
-	vendor/greenromproject/grpapps/bootanimation.zip:system/media/bootanimation.zip
+	vendor/greenromproject/grpapps/99sdcard3072kb:system/etc/init.d/99sdcard3072kb
 
+#DISABLED:  This has a problem; it breaks bootanimation; I'm thinking the packaging but don't know yet
+#	vendor/greenromproject/grpapps/bootanimation.zip:system/media/bootanimation.zip
+
+#DISABLED:  Causes FC issues with music player 
 # Honeycomb music player
-PRODUCT_COPY_FILES += \
-	vendor/greenromproject/grpapps/com.google.android.music-1.apk:system/app/com.google.android.music-1.apk
+#PRODUCT_COPY_FILES += \
+#	vendor/greenromproject/grpapps/com.google.android.music-1.apk:system/app/com.google.android.music-1.apk
 
 # MISC included apps
 PRODUCT_COPY_FILES += \
