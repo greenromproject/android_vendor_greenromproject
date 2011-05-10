@@ -5,5 +5,6 @@ add_lunch_combo greenromproject_harmony-eng
 add_lunch_combo greenromproject_inc-eng
 add_lunch_combo greenromproject_leo-eng
 add_lunch_combo greenromproject_dream_sapphire-eng
+add_lunch_combo greenromproject_droid2-eng
 
 PATH=$PATH:$PWD/vendor/greenromproject/tools ; export PATH
