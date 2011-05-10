@@ -12,7 +12,13 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
 	vendor/greenromproject/grpapps/Launcher2.apk:system/app/Launcher2.apk \
 	vendor/greenromproject/grpapps/greenromproject.apk:system/app/greenromproject.apk \
-	vendor/greenromproject/grpapps/99sdcard3072kb:system/etc/init.d/99sdcard3072kb
+	vendor/greenromproject/grpapps/99sdcard3072kb:system/etc/init.d/99sdcard3072kb \
+	vendor/greenromproject/grpapps/com.android.vending-2.3.6.apk:system/app/com.android.vending-2.3.6.apk
+
+# Soon to be removed theme by UpwardSpiral @ http://forum.xda-developers.com/showthread.php?p=11760329
+PRODUCT_COPY_FILES += \
+	vendor/greenromproject/grpapps/Galaxy_Green141.apk:system/app/Galaxy_Green141.apk
+
 
 #DISABLED:  This has a problem; it breaks bootanimation; I'm thinking the packaging but don't know yet
 #	vendor/greenromproject/grpapps/bootanimation.zip:system/media/bootanimation.zip
@@ -42,7 +48,6 @@ PRODUCT_COPY_FILES += \
         vendor/greenromproject/proprietary/OneTimeInitializer.apk:./system/app/OneTimeInitializer.apk \
         vendor/greenromproject/proprietary/SetupWizard.apk:./system/app/SetupWizard.apk \
         vendor/greenromproject/proprietary/Talk.apk:./system/app/Talk.apk \
-        vendor/greenromproject/proprietary/Vending.apk:./system/app/Vending.apk \
         vendor/greenromproject/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
         vendor/greenromproject/proprietary/features.xml:./system/etc/permissions/features.xml \
         vendor/greenromproject/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
