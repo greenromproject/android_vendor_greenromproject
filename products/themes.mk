@@ -3,6 +3,7 @@
 ifneq ($(SKIP_THEMES),true)
 PRODUCT_PACKAGES += \
        Androidian \
-       Cyanbread
+       Cyanbread \
+       Greenie
 endif
 
