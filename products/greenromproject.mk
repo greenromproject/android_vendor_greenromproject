@@ -22,10 +22,9 @@ PRODUCT_COPY_FILES += \
 #DISABLED:  This has a problem; it breaks bootanimation; I'm thinking the packaging but don't know yet
 #	vendor/greenromproject/grpapps/bootanimation.zip:system/media/bootanimation.zip
 
-#DISABLED:  Causes FC issues with music player 
 # Honeycomb music player
-#PRODUCT_COPY_FILES += \
-#	vendor/greenromproject/grpapps/com.google.android.music-1.apk:system/app/com.google.android.music-1.apk
+PRODUCT_COPY_FILES += \
+	vendor/greenromproject/grpapps/com.google.android.music-1.apk:system/app/com.google.android.music-1.apk
 
 # MISC included apps
 PRODUCT_COPY_FILES += \
