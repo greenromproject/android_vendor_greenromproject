@@ -31,9 +31,6 @@ PRODUCT_COPY_FILES += \
 
 # MISC included apps
 PRODUCT_COPY_FILES += \
-        vendor/greenromproject/proprietary/CarHomeLauncher.apk:./system/app/CarHomeLauncher.apk \
-        vendor/greenromproject/proprietary/Facebook.apk:./system/app/Facebook.apk \
-        vendor/greenromproject/proprietary/GenieWidget.apk:./system/app/GenieWidget.apk \
         vendor/greenromproject/proprietary/Gmail.apk:./system/app/Gmail.apk \
         vendor/greenromproject/proprietary/GoogleBackupTransport.apk:./system/app/GoogleBackupTransport.apk \
         vendor/greenromproject/proprietary/GoogleCalendarSyncAdapter.apk:./system/app/GoogleCalendarSyncAdapter.apk \
@@ -48,7 +45,6 @@ PRODUCT_COPY_FILES += \
         vendor/greenromproject/proprietary/NetworkLocation.apk:./system/app/NetworkLocation.apk \
         vendor/greenromproject/proprietary/OneTimeInitializer.apk:./system/app/OneTimeInitializer.apk \
         vendor/greenromproject/proprietary/SetupWizard.apk:./system/app/SetupWizard.apk \
-        vendor/greenromproject/proprietary/Talk.apk:./system/app/Talk.apk \
         vendor/greenromproject/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
         vendor/greenromproject/proprietary/features.xml:./system/etc/permissions/features.xml \
         vendor/greenromproject/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
