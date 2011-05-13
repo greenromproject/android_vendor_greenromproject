@@ -11,7 +11,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # GreenRomProject apps 
 PRODUCT_COPY_FILES += \
 	vendor/greenromproject/grpapps/Launcher2.apk:system/app/Launcher2.apk \
-	vendor/greenromproject/grpapps/greenromproject.apk:system/app/greenromproject.apk \
+#	vendor/greenromproject/grpapps/greenromproject.apk:system/app/greenromproject.apk \
 	vendor/greenromproject/grpapps/90ramhack:system/etc/init.d/90ramhack \
 	vendor/greenromproject/grpapps/95speedhacks:system/etc/init.d/95speedhacks \
 	vendor/greenromproject/grpapps/98chmodbomb:system/etc/init.d/98chmodbomb \
@@ -19,8 +19,8 @@ PRODUCT_COPY_FILES += \
 	vendor/greenromproject/grpapps/sqlite3:system/bin/sqlite3
 
 # Soon to be removed theme by UpwardSpiral @ http://forum.xda-developers.com/showthread.php?p=11760329
-PRODUCT_COPY_FILES += \
-	vendor/greenromproject/grpapps/Galaxy_Green141.apk:system/app/Galaxy_Green141.apk
+#PRODUCT_COPY_FILES += \
+#	vendor/greenromproject/grpapps/Galaxy_Green141.apk:system/app/Galaxy_Green141.apk
 
 #DISABLED:  This has a problem; it breaks bootanimation; I'm thinking the packaging but don't know yet
 #	vendor/greenromproject/grpapps/bootanimation.zip:system/media/bootanimation.zip
