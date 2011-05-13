@@ -3,8 +3,6 @@ PRODUCT_NAME := greenromproject
 PRODUCT_BRAND := greenromproject
 PRODUCT_DEVICE := generic
 
-PRODUCT_PACKAGES += ADWLauncher
-
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # Used by BusyBox
