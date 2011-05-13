@@ -1,0 +1,26 @@
+#!/system/bin/sh
+# Permission script
+# Written by Einherjar Dev Team
+# www.edtdev.com
+
+logFile=/data/edt/logs/S30edt_perms.log
+if [ -f $logFile ]; then
+        rm $logFile
+fi
+touch $logFile
+
+mount -o rw,remount /dev/block/stl9 /system
+echo "Setting permissions" >> $logFile
+        for file in /system/app/* /system/framework/* /data/app/*; do
+                echo "    setting permissions (644) for $file" >> $logFile
+                chmod 644 $file
+        done
+        
+        echo "chmodding init.d folder"
+        chmod 777 /system/etc/init.d
+        
+        for file in /system/etc/init.d/*; do
+                echo "    setting permissions (777) for $file" >> $logFile
+                chmod 777 $file
+        done
+echo "Permissions set" >> $logFile

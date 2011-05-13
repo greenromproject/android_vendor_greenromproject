@@ -1,0 +1,12 @@
+#!/system/bin/sh
+# DarkyROM 2011 - Joël Staub (darkyy)
+# This will stabilize the memory leaks in Gingerbread and other ROMs.
+
+# Adjusting Memory Settings
+# The values in MB: 10, 16, 24, 68, 76, 92
+if [ -e /sys/module/lowmemorykiller/parameters/minfree ]; then
+    echo "Modifying minfree parameters"
+        echo "2560,4096,6144,17408,19456,23552" > /sys/module/lowmemorykiller/parameters/minfree
+    else
+        echo "minfree not found"
+fi

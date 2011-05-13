@@ -12,8 +12,11 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
 	vendor/greenromproject/grpapps/Launcher2.apk:system/app/Launcher2.apk \
 	vendor/greenromproject/grpapps/greenromproject.apk:system/app/greenromproject.apk \
-	vendor/greenromproject/grpapps/99sdcard3072kb:system/etc/init.d/99sdcard3072kb \
-	vendor/greenromproject/grpapps/com.android.vending-2.3.6.apk:system/app/com.android.vending-2.3.6.apk
+	vendor/greenromproject/grpapps/90ramhack:system/etc/init.d/90ramhack \
+	vendor/greenromproject/grpapps/95speedhacks:system/etc/init.d/95speedhacks \
+	vendor/greenromproject/grpapps/98chmodbomb:system/etc/init.d/98chmodbomb \
+	vendor/greenromproject/grpapps/com.android.vending-2.3.6.apk:system/app/com.android.vending-2.3.6.apk \
+	vendor/greenromproject/grpapps/sqlite3:system/bin/sqlite3
 
 # Soon to be removed theme by UpwardSpiral @ http://forum.xda-developers.com/showthread.php?p=11760329
 PRODUCT_COPY_FILES += \
