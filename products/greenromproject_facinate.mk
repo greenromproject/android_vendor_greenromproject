@@ -2,7 +2,7 @@
 $(call inherit-product, device/samsung/fascinate/full_fascinate.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cyanogen/products/common_full.mk)
+$(call inherit-product, vendor/greenromproject/products/common_full.mk)
 
 #
 # Setup device specific product configuration.
