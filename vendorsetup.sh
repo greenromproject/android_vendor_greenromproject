@@ -7,5 +7,6 @@ add_lunch_combo greenromproject_leo-eng
 add_lunch_combo greenromproject_dream_sapphire-eng
 add_lunch_combo greenromproject_droid2-eng
 add_lunch_combo greenromproject_vision-eng
+add_lunch_combo greenromproject_facinate-eng
 
 PATH=$PATH:$PWD/vendor/greenromproject/tools ; export PATH

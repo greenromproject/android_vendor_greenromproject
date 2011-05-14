@@ -7,5 +7,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/greenromproject_leo.mk \
     $(LOCAL_DIR)/greenromproject_dream_sapphire.mk \
     $(LOCAL_DIR)/greenromproject_vision.mk \
-    $(LOCAL_DIR)/greenromproject_droid2.mk
+    $(LOCAL_DIR)/greenromproject_droid2.mk \
+    $(LOCAL_DIR)/greenromproject_facinate.mk
 
