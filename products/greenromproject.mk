@@ -30,14 +30,14 @@ PRODUCT_COPY_FILES += \
 	vendor/greenromproject/grpapps/com.google.android.music-1.apk:system/app/com.google.android.music-1.apk
 
 # MISC included apps
-PRODUCT_COPY_FILES += \
-        vendor/greenromproject/proprietary/Gmail.apk:./system/app/Gmail.apk \
-        vendor/greenromproject/proprietary/OneTimeInitializer.apk:./system/app/OneTimeInitializer.apk \
-        vendor/greenromproject/proprietary/SetupWizard.apk:./system/app/SetupWizard.apk \
-        vendor/greenromproject/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
-        vendor/greenromproject/proprietary/features.xml:./system/etc/permissions/features.xml \
-        vendor/greenromproject/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
-        vendor/greenromproject/proprietary/libvoicesearch.so:./system/lib/libvoicesearch.so
+#PRODUCT_COPY_FILES += \
+#        vendor/greenromproject/proprietary/Gmail.apk:./system/app/Gmail.apk \
+#        vendor/greenromproject/proprietary/OneTimeInitializer.apk:./system/app/OneTimeInitializer.apk \
+#        vendor/greenromproject/proprietary/SetupWizard.apk:./system/app/SetupWizard.apk \
+#        vendor/greenromproject/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
+#        vendor/greenromproject/proprietary/features.xml:./system/etc/permissions/features.xml \
+#        vendor/greenromproject/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
+#        vendor/greenromproject/proprietary/libvoicesearch.so:./system/lib/libvoicesearch.so
 
 # EXCLUDED gapps
 #
