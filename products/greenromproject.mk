@@ -21,8 +21,8 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES += \
 #	vendor/greenromproject/grpapps/Galaxy_Green141.apk:system/app/Galaxy_Green141.apk
 
-#DISABLED:  This has a problem; it breaks bootanimation; I'm thinking the packaging but don't know yet
-#	vendor/greenromproject/grpapps/bootanimation.zip:system/media/bootanimation.zip
+PRODUCT_COPY_FILES += \
+	vendor/greenromproject/grpapps/bootanimation.zip:system/media/bootanimation.zip
 
 # Honeycomb music player
 PRODUCT_COPY_FILES += \
