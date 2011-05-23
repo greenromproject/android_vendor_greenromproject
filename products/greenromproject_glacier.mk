@@ -1,8 +1,6 @@
 # Inherit device configuration for glacier.
 $(call inherit-product, device/htc/glacier/glacier.mk)
 
-# Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/greenromproject/products/common_full.mk)
 
 # Include GSM stuff
 $(call inherit-product, vendor/greenromproject/products/gsm.mk)
@@ -21,6 +19,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_glacier BUILD_ID=FRG83 BUILD_DI
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_glacier_defconfig
+
+# common inclusions
+$(call inherit-product, vendor/greenromproject/products/common_full.mk)
 
 # Extra glacier overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/greenromproject/overlay/glacier

@@ -1,9 +1,6 @@
 # Inherit AOSP device configuration for leo.
 $(call inherit-product, device/htc/leo/full_leo.mk)
 
-# Inherit some common stuff.
-$(call inherit-product, vendor/greenromproject/products/common_full.mk)
-
 # Include GSM stuff
 $(call inherit-product, vendor/greenromproject/products/gsm.mk)
 
@@ -18,6 +15,9 @@ PRODUCT_MODEL := HTC HD2
 PRODUCT_MANUFACTURER := HTC
 
 PRODUCT_BUILD_PROP_OVERRIDES:= PRODUCT_NAME=passion BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
+
+# Inherit some common stuff.
+$(call inherit-product, vendor/greenromproject/products/common_full.mk)
 
 # Extra leo overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/greenromproject/overlay/leo

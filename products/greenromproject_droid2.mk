@@ -1,5 +1,5 @@
 # set up version info
-include vendor/greenromproject/products/greenromproject.mk
+
 build_name := greenromproject
 build_version := $(build_version_major).$(build_version_minor).$(build_version_revision)
 
@@ -27,6 +27,9 @@ PRODUCT_BUILD_PROP_OVERRIDES := \
 	BUILD_PRODUCT=droid2_vz2 \
 	PRIVATE_BUILD_DESC="cdma_droid2-user 2.2 VZW 2.2.19 ota-rel-keys,release-keys" \
 	BUILD_FINGERPRINT=verizon/droid2_vzw/cdma_droid2/droid2:2.2/VZW/22.19:user/ota-rel-keys,release-keys
+
+# start the including GRP
+include vendor/greenromproject/products/common_full.mk
 
 # include proprietaries for now
 USE_PROPRIETARIES := \
