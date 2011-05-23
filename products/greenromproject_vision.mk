@@ -1,6 +1,9 @@
 # Inherit device configuration for vision.
 $(call inherit-product, device/htc/vision/vision.mk)
 
+# Inherit some common cyanogenmod stuff.
+$(call inherit-product, vendor/greenromproject/products/common_full.mk)
+
 # Include GSM stuff
 $(call inherit-product, vendor/greenromproject/products/gsm.mk)
 
@@ -18,9 +21,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_vision BUILD_ID=FRF91 BUILD_DIS
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=greenromproject_vision_defconfig
-
-# Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/greenromproject/products/common_full.mk)
 
 # Extra Vision overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/greenromproject/overlay/vision

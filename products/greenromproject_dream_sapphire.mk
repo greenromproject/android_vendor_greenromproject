@@ -6,6 +6,9 @@ SMALL_BOOTANIM := GoVOLS
 # Inherit AOSP device configuration for dream_sapphire.
 $(call inherit-product, device/htc/dream_sapphire/full_dream_sapphire.mk)
 
+# Inherit some common stuff.
+$(call inherit-product, vendor/greenromproject/products/common.mk)
+
 # Include GSM-only stuff
 $(call inherit-product, vendor/greenromproject/products/gsm.mk)
 
@@ -23,9 +26,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRJ22 BUILD_FING
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=greenromproject_msm_defconfig
-
-# Inherit some common stuff.
-$(call inherit-product, vendor/greenromproject/products/common.mk)
 
 # Extra DS overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/greenromproject/overlay/dream_sapphire
