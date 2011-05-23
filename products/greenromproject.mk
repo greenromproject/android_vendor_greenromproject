@@ -1,7 +1,8 @@
 # GreenRomProject property overrides
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.rommanager.developerid=GreenRomProject \
-	ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-$(shell date +%m%d%Y)
+	ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-$(shell date +%m%d%Y) \
+	ro.HOME_APP_ADJ=0
 
 # Apply GreenRomProject themed overlay and common overlay to all devices
 PRODUCT_PACKAGE_OVERLAYS += \
