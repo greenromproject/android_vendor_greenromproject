@@ -10,7 +10,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 # GreenRomProject apps 
 PRODUCT_COPY_FILES += \
-	vendor/greenromproject/grpapps/Launcher2.apk:system/app/Launcher2.apk \
 #	vendor/greenromproject/grpapps/greenromproject.apk:system/app/greenromproject.apk \
 	vendor/greenromproject/grpapps/90ramhack:system/etc/init.d/90ramhack \
 	vendor/greenromproject/grpapps/95speedhacks:system/etc/init.d/95speedhacks \
@@ -28,6 +27,13 @@ PRODUCT_COPY_FILES += \
 # Honeycomb music player
 PRODUCT_COPY_FILES += \
 	vendor/greenromproject/grpapps/com.google.android.music-1.apk:system/app/com.google.android.music-1.apk
+
+# Device Specific apps
+ifdef USE_ADW
+	PRODUCT_PACKAGES += ADWLauncher
+else
+	PRODUCT_COPY_FILES += vendor/greenromproject/grpapps/Launcher2.apk:system/app/Launcher2.apk
+endif
 
 # MISC included apps
 #PRODUCT_COPY_FILES += \

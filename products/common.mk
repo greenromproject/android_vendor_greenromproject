@@ -1,4 +1,4 @@
-# Generic cyanogenmod product
+# Generic greenromproject product
 PRODUCT_NAME := greenromproject
 PRODUCT_BRAND := greenromproject
 PRODUCT_DEVICE := generic

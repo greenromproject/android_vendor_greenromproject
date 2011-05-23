@@ -1,7 +1,12 @@
+#
+# GRP device specific apps must be defined before common_full.mk
+USE_ADW := GoVOLS
+
+
 # Inherit AOSP device configuration for desirec.
 $(call inherit-product, device/htc/desirec/device_desirec.mk)
 
-# Inherit some common cyanogenmod stuff.
+# Inherit some common greenromproject stuff.
 $(call inherit-product, vendor/greenromproject/products/common_full.mk)
 
 # Inherit apns list from common

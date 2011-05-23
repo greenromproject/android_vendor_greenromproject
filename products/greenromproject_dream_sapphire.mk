@@ -1,3 +1,7 @@
+#
+# GRP device specific apps must be defined before common_full.mk
+USE_ADW := GoVOLS
+
 # Inherit AOSP device configuration for dream_sapphire.
 $(call inherit-product, device/htc/dream_sapphire/full_dream_sapphire.mk)
 
