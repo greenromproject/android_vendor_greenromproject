@@ -28,10 +28,6 @@ PRODUCT_BUILD_PROP_OVERRIDES := \
 	PRIVATE_BUILD_DESC="cdma_droid2-user 2.2 VZW 2.2.19 ota-rel-keys,release-keys" \
 	BUILD_FINGERPRINT=verizon/droid2_vzw/cdma_droid2/droid2:2.2/VZW/22.19:user/ota-rel-keys,release-keys
 
-# some standard overrides
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.rommanager.developerid=greenromproject \
-
 # include proprietaries for now
 USE_PROPRIETARIES := \
 	motorola

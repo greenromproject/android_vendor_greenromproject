@@ -1,7 +1,7 @@
 #
 # GRP device specific apps must be defined before common_full.mk
 USE_ADW := GoVOLS
-
+SMALL_BOOTANIM := GoVOLS
 
 # Inherit AOSP device configuration for desirec.
 $(call inherit-product, device/htc/desirec/device_desirec.mk)
