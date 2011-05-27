@@ -1,7 +1,7 @@
 # GreenRomProject property overrides
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.rommanager.developerid=GreenRomProject \
-	ro.modversion=GreenRomProject-presents-CyanogenMod-7.1.0-RC0-$(shell date +%m%d%Y)_$(PRODUCT_DEVICE) \
+	ro.modversion=GreenRomProject-presents-CyanogenMod-7-synced-$(shell date +%m%d%Y) \
 	ro.HOME_APP_ADJ=0	#system not allowed to kill launcher
 
 # Apply GreenRomProject themed overlay and common overlay to all devices
