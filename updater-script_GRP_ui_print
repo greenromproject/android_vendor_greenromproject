@@ -1,0 +1,8 @@
+ui_print("Welcome to GreenRomProject");
+ui_print("for support visit");
+ui_print("       greenromproject.com");
+ui_print("  __       __     ___ ");
+ui_print(" /  \     |  \   |   | ");
+ui_print(" | __     |--/   |___/ ");
+ui_print(" \__/reen |  \om |roject");
+ui_print("     ");
