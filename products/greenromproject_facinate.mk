@@ -1,6 +1,3 @@
-# Inherit AOSP device configuration for fascinate.
-$(call inherit-product, device/samsung/fascinate/full_fascinate.mk)
-
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/greenromproject/products/common_full.mk)
 
