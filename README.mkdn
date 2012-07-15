@@ -12,7 +12,7 @@ Then to sync up:
 
     repo sync -j16
 
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.com/) for building instructions.
+Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.com/wiki/Building_from_source) for building instructions.
 
 For more information on this Github Organization and how it is structured, 
 please [read the wiki article](http://wiki.cyanogenmod.com/index.php/Github_Organization)
