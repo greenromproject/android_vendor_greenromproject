@@ -2,7 +2,7 @@ Getting Started
 ---------------
 
 To get started with Android/CyanogenMod/GreenRomProject, you'll need to get
-familiar with [Git and Repo](http://source.android.com/download/using-repo).
+familiar with [Git and Repo](https://help.github.com/articles/set-up-git).
 
 To initialize your local repository using the projects needed to build GreenRomProject, use a command like this:
 
